@@ -1,70 +1,21 @@
-openldap_server
-===============
+An OpenLDAP server installation for CentOS 7 using Ansible. This is **only** good for local development VM.
 
-This roles installs the OpenLDAP server on the target machine. It has the
-option to enable/disable SSL by setting it in defaults or overriding it.
+Adds 8 user accounts, under `ou=people,dc=example,dc=edu` all passwords are `password`.
 
-Requirements
-------------
+I generally make use of this when working with a Shibboleth IdP though it might be useful in other scenarios as well.
 
-This role requires Ansible 1.4 or higher, and platform requirements are listed
-in the metadata file.
+Forked from the good work originally found at [https://github.com/bennojoy/openldap_server](https://github.com/bennojoy/openldap_server).
 
-Role Variables
---------------
+## Config
+Simply copy `ansible_hosts.dist` to `ansible_hosts` and edit with your development VM IP/Hostname. You should be able to ssh to this location as root.
 
-The variables that can be passed to this role and a brief description about
-them are as follows:
+## Running
+`ansible-playbook -i ansible_hosts site.yml`
 
-    openldap_serverdomain_name: example.com    # The domain prefix for ldap
-    openldap_serverrootpw: passme              # This is the password for admin for openldap
-    openldap_serverenable_ssl: true            # To enable/disable ssl for the ldap
-    openldap_servercountry: US                 # The self signed ssl certificate parameters
-    openldap_serverstate: Oregon
-    openldap_serverlocation: Portland
-    openldap_serverorganization: IT
+Idempotent? Nope. Rollback point recommended.
 
-
-Examples
---------
-
-1) Configure an OpenLDAP server without SSL:
-
-    - hosts: all
-      sudo: true
-      roles:
-      - role: bennojoy.openldap_server
-        openldap_server_domain_name: example.com
-        openldap_server_rootpw: passme
-        openldap_server_enable_ssl: false
-       
-2) Configure an OpenLDAP server with SSL:
-
-    - hosts: all
-      sudo: true
-      roles:
-      - role: bennojoy.openldap_server
-        openldap_server_domain_name: example.com
-        openldap_server_rootpw: passme
-        openldap_server_enable_ssl: true
-        openldap_server_country: US
-        openldap_server_state: Oregon
-        openldap_server_location: Portland
-        openldap_server_organization: IT
-
-Dependencies
-------------
-
-None
-
-License
--------
-
+## License
 BSD
 
-Author Information
-------------------
-
-Benno Joy
-
-
+## Author
+[Bradley Beddoes](https://github.com/bradleybeddoes), based on work by [Benno Joy](https://github.com/bennojoy)

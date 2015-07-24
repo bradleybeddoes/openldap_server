@@ -1,0 +1,25 @@
+- hosts: ldap-servers
+  vars:
+    env:
+      RUNLEVEL: 1
+
+    openldap_server_pkgs:
+      - openldap-servers
+      - openldap-clients
+      - libselinux-python
+
+    openldap_server_app_path: "/etc/openldap/"
+    openldap_server_user: ldap
+
+    openldap_server_domain_name: example.edu
+    openldap_server_rootpw: password
+
+    openldap_server_ldif: domain.ldif
+
+  tasks:
+    - include: tasks/install.yml
+    - include: tasks/configure.yml
+
+  handlers:
+    - name: restart slapd
+      service: name=slapd state=restarted enabled=yes

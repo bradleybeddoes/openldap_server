@@ -1,0 +1,127 @@
+version: 1
+
+dn: ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: organizationalUnit
+ou: people
+
+dn: uid=fred,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Fred Blogs
+sn: Blogs
+displayName: Fred Blogs
+eduPersonAffiliation: staff
+givenName: Fred
+mail: fred@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=katie,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Katie Pillar
+sn: Pillar
+displayName: Katie Pillar
+eduPersonAffiliation: student
+givenName: Katie
+mail: katie@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=john,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: John Resource
+sn: Resource
+displayName: John Resource
+eduPersonAffiliation: student
+givenName: John
+mail: john@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=casper,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Casper Ghost
+sn: Ghost
+displayName: Casper Ghost
+eduPersonAffiliation: student
+givenName: Casper
+mail: casper@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=bea,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Bea O'Problem
+sn: O'Problem
+displayName: Bea O'Problem
+eduPersonAffiliation: staff
+givenName: Bea
+mail: bea@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=peanut,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Peanut Nu Butajar
+sn: Butajar
+displayName: Peanut Butajar
+eduPersonAffiliation: staff
+givenName: Peanut
+mail: peanut@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=asif,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Asif Heedgeevasheet
+sn: Heedgeevasheet
+displayName: Asif Heedgeevasheet
+eduPersonAffiliation: staff
+givenName: Asif
+mail: asif@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
+dn: uid=brock,ou=people,dc=example,dc=edu
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: eduPerson
+cn: Brock Lee Yuck
+sn: Lee Yuck
+displayName: Sir Brock Lee Yuck
+eduPersonAffiliation: student
+givenName: Brock
+mail: brock@example.edu
+o: Example University
+userPassword:: e1NTSEF9MkFUUzYxdHBRbmNWN0pDYlVQeFZVbnU5eklIOU01TFI=
+
